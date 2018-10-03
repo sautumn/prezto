@@ -259,6 +259,7 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
   # Working Copy (w)
   alias gws='git status --ignore-submodules=${_git_status_ignore_submodules} --short'
   alias gwS='git status --ignore-submodules=${_git_status_ignore_submodules}'
+  alias gst='git status'
   alias gwd='git diff --no-ext-diff'
   alias gwD='git diff --no-ext-diff --word-diff'
   alias gwr='git reset --soft'
