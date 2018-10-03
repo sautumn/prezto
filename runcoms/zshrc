@@ -4,6 +4,10 @@
 # Authors:
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
+# CUSTOM STUFF ADDED BY ME
+precmd() {
+  echo -ne "\e]1;${PWD##*/}\a"
+}
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
